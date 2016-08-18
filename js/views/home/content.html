@@ -1,0 +1,59 @@
+<div class="content">
+    <p>选项卡指令</p>
+    <hr/>
+    <my-tab my-id="div1" my-data="data1"></my-tab>
+    <my-tab my-id="div2" my-data="data2"></my-tab>
+    <br/>
+    <p>拖拽指令封装</p>
+    <hr/>
+    <div id="div3" my-drag="false"></div>
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+    <p>嵌套指令</p>
+    <hr/>
+    <hello>
+        <hi></hi>
+    </hello>
+    <br/><br/>
+    <p>$http服务</p>
+    <hr/>
+    <input type="text" style="border:1px solid #ccc;"/>
+    <input type="button" value="搜索" style="width:50px;text-align:center;"/>
+    <ul style="list-style:none;">
+        <li></li>
+    </ul>
+    <br/><br/>
+    <p>$location服务</p>
+    <hr/>
+    <div id="fuwu">
+        <ul>
+            <li ng-repeat="id in [4,5,6,7,8]" ng-click="change('div'+ id)">{{id}}</li>
+        </ul>
+        <div ng-repeat="id in [4,5,6,7,8]" ng-attr-id="div{{id}}">
+            {{id}}
+        </div>
+    </div>
+    <br/><br/>
+    <p>$cacheFactory</p>
+    <hr/>
+    <p>$log</p>
+    <hr/>
+    <p>$interpolate</p>
+    <hr/>
+    <input type="text" ng-model="mytext"/>
+    <textarea ng-model="bb"></textarea>
+    <p>{{showText}}</p>
+    <br/><br/>
+    <p>$q的理解</p>
+    <hr/>
+    <p>自定义服务</p>
+    <hr/>
+
+
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,90 @@
+/**
+ * Created by hama on 2015/9/22.
+ */
+//requireJS的入口文件
+require.config({
+    paths:{
+        'jquery':'./lib/jquery',
+        'angular':'./lib/angular',
+        'angular-route':'./lib/angular-route',
+        'angular-animate':'./lib/angular-animate',
+        'angular-cookies':'./lib/angular-cookies',
+        'angular-loader':'./lib/angular-loader',
+        'angular-mocks':'./lib/angular-mocks',
+        'angular-resource':'./lib/angular-resource',
+        'angular-sanitize':'./lib/angular-sanitize',
+        'angular-scenario':'./lib/angular-scenario',
+        'angular-touch':'./lib/angular-touch',
+        'app':'app',
+        'route':'appRoute',
+        'angularUiRouter':'./lib/angular-ui-router',
+        'mainController':'./controllers/mainCtrl',
+        'indexCtl':'./controllers/indexCtl',
+        'homeCtl':'./controllers/homeCtl',
+        'aboutCtl':'./controllers/aboutCtl',
+        'tab1':'./controllers/tab1',
+        'tab2':'./controllers/tab2',
+        'tab3':'./controllers/tab3',
+        'mainDirective':'./directives/mainDirective',
+        'tab':'./directives/tab',
+        'drag':'./directives/drag',
+        'nested':'./directives/nested',
+        'geoFactory':'./services/geoFactory',
+        'filter':'./filter/filter'
+    },
+    shim:{
+        angular:{
+            exports:'angular'
+        },
+        'angular-route':{
+            deps:['angular'],
+            exports:'angular-route'
+        },
+        'angularUiRouter':{
+            deps:['angular'],
+            exports:'ui-router'
+        },
+        'angular-animate':{
+            deps:['angular'],
+            exports:'angular-animate'
+        },
+        'angular-cookies':{
+            deps:['angular'],
+            exports:'angular-cookies'
+        },
+        'angular-loader':{
+            deps:['angular'],
+            exports:'angular-loader'
+        },
+        'angular-mocks':{
+            deps:['angular'],
+            exports:'angular-mocks'
+        },
+        'angular-resource':{
+            deps:['angular'],
+            exports:'angular-resource'
+        },
+        'angular-sanitize':{
+            deps:['angular'],
+            exports:'angular-sanitize'
+        },
+        'angular-scenario':{
+            deps:['angular'],
+            exports:'angular-scenario'
+        },
+        'angular-touch':{
+            deps:['angular'],
+            exports:'angular-touch'
+        }
+    }
+
+});
+require(['jquery','angular','angular-route','angularUiRouter','angular-animate','angular-cookies','angular-loader','angular-mocks','angular-resource', 'angular-sanitize','angular-scenario','angular-touch','app','route','mainController','mainDirective','geoFactory','filter'], function($,angular){
+    $(function(){
+        //手动初始化，自动初始化挂载到html标签上ng-app这个属性
+        angular.bootstrap(document,['lzyapp']);
+
+
+    });
+})
+

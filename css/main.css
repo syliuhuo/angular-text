@@ -1,0 +1,120 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+input,select,textarea {
+    border:1px solid #ccc;
+}
+.navbar {
+    border-radius: 0px;
+}
+html,body {
+    font-family: "Microsoft YaHei", \u5FAE\u8F6F\u96C5\u9ED1, "MicrosoftJhengHei", \u534E\u6587\u7EC6\u9ED1, STHeiti, MingLiu;
+    font-size:14px;
+    color:#333;
+}
+.header {
+    color:#fff;!important;
+}
+.logo {
+    margin: 8px 15px 8px 5px;
+    padding: 0;
+    width: 125px;
+    height: 34px;
+    background:url(../img/logo.png) no-repeat;
+}
+.main {
+    min-height:800px;
+    margin-bottom:100px;
+
+}
+
+.footer {
+    background:#000;
+    height:70px;
+    padding:15px 0;
+    color:#fff;
+}
+.list {
+    margin-top:20px;
+}
+#div1 div ,#div2 div {
+    width:200px;
+    height:200px;
+    border:1px solid red;
+    display:none;
+}
+#div1 input,#div2 input {
+    width:50px;
+}
+#div1 input.active,#div2 input.active {
+    background:red;
+}
+#div3 {
+    width:100px;
+    height:100px;
+    background:red;
+    position:absolute;
+
+}
+table {
+    width: 100%;
+    border: 1px solid silver;
+    border-collapse: collapse;
+}
+
+table th, td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 3px;
+}
+.align-top {vertical-align: top}
+.city-container .content {
+    border: 1px solid #d7dadb;
+    background-color: #ffffff;
+}
+.city-container .big-title {
+    font-size: 20px;
+    margin: 10px 0px 10px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d7dadb;
+}
+.city-container  .name-header {
+    margin: 15px;
+}
+.city-container  .name-header .name {
+    width: 20%;
+    padding: 18px;
+    border: 1px solid #d7dadb;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+.city-container  .name-header .name:hover {
+    background: #f3f4f8;
+}
+.city-container .name-header .name.active {
+    color: #38a884;
+    background: #f3f4f8;
+}
+.city-container  .name-card {
+    margin: 30px 0;
+}
+.city-container  .name-card .desc {
+    font-size: 20px;
+}
+#fuwu div{
+    width:300px;
+    height:500px;
+    border:1px #000 solid ;
+    margin:20px;
+}
+#fuwu ul  {
+    width:200px;
+    position:fixed;
+    top:0;
+    right:0;
+}
+
+
